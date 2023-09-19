@@ -1,0 +1,220 @@
+/*===================COMMON====================*/
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.border-7 {
+  border-width: 10px !important;
+}
+
+.rounded-7 {
+  border-radius: 2.3rem;
+}
+
+.section-caption {
+  position: relative;
+}
+
+.section-caption::after {
+  content: "";
+  background-color: #0078ff;
+  width: 4%;
+  height: 5px;
+  position: absolute;
+  top: 94%;
+  left: 48%;
+}
+
+.fs-7 {
+  font-size: 0.8rem;
+}
+
+/*=================Start NavBar ===============*/
+
+.nav-bar {
+  height: 100px;
+}
+.nav-item {
+  margin-right: 1rem;
+}
+.navbar-brand {
+  font-size: 1.6rem;
+}
+
+.active {
+  position: relative;
+  padding-left: 0px !important;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  transition: all 1s;
+}
+
+.nav-link::before {
+  width: 75%;
+}
+
+/*================= End NavBar ===============*/
+
+/*=================Start Home ===============*/
+#home {
+  background-image: url(../images/intro-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+#home .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#home h1 {
+  font-size: 4.5rem;
+}
+/*=================End Home ===============*/
+
+/*=================Start About ===============*/
+.bold {
+  font-weight: 600;
+}
+
+#about h3 {
+  position: relative;
+  width: fit-content;
+}
+
+#about h3::after {
+  content: "";
+  background-color: #0078ff;
+  width: 75%;
+  height: 0.2rem;
+  position: absolute;
+  top: 120%;
+  left: 0;
+}
+
+#about .progress {
+  height: 0.7rem;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 768px) {
+  #about .container {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 0px) {
+  #about .container {
+    width: 100% !important;
+  }
+}
+/*=================End About ===============*/
+
+/*=================Start Services============*/
+#services .card-icon {
+  width: 125px;
+  height: 125px;
+}
+
+#services .card-icon i {
+  font-size: 3rem;
+}
+
+#services .card-body .card-icon {
+  transition: all 0.5s;
+}
+#services .card-body:hover .card-icon {
+  background-color: #0078ff;
+  border-color: #cde1f8 !important;
+  color: white;
+}
+
+/*=============START STATISTICS==============*/
+#stat {
+  background: url(../images/counters-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#stat .overlay {
+  min-height: 50vh;
+}
+
+#stat .stat-icon {
+  width: 75px;
+  height: 75px;
+}
+
+.stat-icon i {
+  font-size: 2rem;
+}
+/*=============END STATISTICS==============*/
+
+/*=============START PORTFOLIO==============*/
+
+.portfolio-img img {
+  transition: all 0.5s;
+}
+#portfolio .card-body:hover img {
+  transform: scale(1.2);
+}
+
+.empty-layer {
+  background: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.empty-layer .overlay {
+  min-height: 30vh;
+}
+
+/*=============END PORTFOLIO==============*/
+
+/*=============START BLOG===================*/
+.info-img {
+  width: 35px;
+  height: 35px;
+}
+/*=============END BLOG===================*/
+
+/*=============START CONTACT===================*/
+#contact {
+  background: url(../images/overlay-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#contact .contact-header h2::after {
+  content: "";
+  background-color: #0078ff;
+  width: 15%;
+  height: 3px;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+#contact .social-media .icon {
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+}
+
+#contact .social-media .icon:hover {
+  color: white;
+  background-color: #0078ff;
+  border-color: #cde1f8 !important;
+}
+
+#contact .social-media .icon {
+  transition: all 0.5s;
+}
+
+/*=============END CONTACT===================*/
